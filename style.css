@@ -1,5 +1,7 @@
 body {
-	background-color: #ffffcc;
+	background: url('./lokole-shot.jpg') no-repeat center center fixed;
+	background-size: cover;
+	background-color: #6e655c;
 	font-size:24px;
 	line-height:34px;
 	font-family:'Roboto Slab',serif;
