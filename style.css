@@ -4,7 +4,7 @@ body {
 	background-color: #6e655c;
 	font-size:24px;
 	line-height:34px;
-	font-family:'Roboto Slab',serif;
+	font-family:serif;
 }
 
 #content {
@@ -23,7 +23,7 @@ body {
 }
 
 #victoria {
-	font-family:'Pacifico',cursive;
+	font-family:cursive;
 	display:block;
 	padding-top:20px;
 	font-size:34px;
@@ -35,7 +35,7 @@ body {
 }
 
 #lokole {
-	font-family:'Lobster Two',cursive;
+	font-family:cursive;
 	font-size:46px;
 	display:block;
 	padding-bottom:10px;
