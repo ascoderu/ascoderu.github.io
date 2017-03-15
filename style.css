@@ -48,3 +48,9 @@ body {
   padding-top: 10px;
   margin: 0;
 }
+
+@media (max-width: 500px) {
+    .content-box {
+        max-width: 90%;
+    }
+}
