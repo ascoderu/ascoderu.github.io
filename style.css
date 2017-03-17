@@ -9,19 +9,27 @@ body {
 }
 
 .page-container {
-  width: 100%;
-  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .content-box {
-  background-color: white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  background-color: #fff;
   padding: 20px 10px 20px 10px;
   border-radius: 45px;
   max-width: 30%;
@@ -50,7 +58,13 @@ body {
 }
 
 @media (max-width: 500px) {
-    .content-box {
+    .content-box.content-box {
         max-width: 90%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    .content-box.content-box {
+        max-width: 50%;
     }
 }
