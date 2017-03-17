@@ -8,29 +8,42 @@ body {
   margin: 0;
 }
 
-.centering-outer-container {
-  position: absolute;
-  display: table;
+.page-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+      align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
-.centering-inner-container {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.centering-content {
-  display: inline-block;
-}
-
-#content {
+.content-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-line-pack: center;
+    align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+      flex-direction: column;
   background-color: #fefefe;
-  max-width: 400px;
-  height: 400px;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
   border-radius: 45px;
+  max-width: 30%;
+  text-align: center;
 }
 
 #victoria {
@@ -52,4 +65,16 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
   margin: 0;
+}
+
+@media (max-width: 500px) {
+    .content-box.content-box {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    .content-box.content-box {
+        max-width: 50%;
+    }
 }
