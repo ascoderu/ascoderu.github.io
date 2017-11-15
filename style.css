@@ -5,18 +5,11 @@ body {
   overflow-y: hidden;
 }
 
-
 /* header styling */
 .navbar-fixed-top {
   top: 0;
   border-width: 0px !important;
-}
-
-.fa-bars {
-  color: white;
-} 
-
-.navbar {
+  color: #9d9d9d;
   height: auto;
 }
 
@@ -24,18 +17,12 @@ body {
   margin-left: 0em;
   padding: 0em;
   height: 100%;
+  background-color: #ffff57;
 }
 
-.profile-navbar {
+.logo-brand {
   height: 60px;
   margin: 5px;
-}
-
-.band-text {
-  font-size: 180%;
-  font-family: Lobster;
-  font-style: italic;
-  padding-top: 10px;
 }
 
 ul {
@@ -70,4 +57,15 @@ ul {
   .after-slash:after {
     content: "" !important;
   }
+}
+
+#home-page .container-fluid,
+#about .container-fluid,
+#take-action .container-fluid,
+#media .container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
