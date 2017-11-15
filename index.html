@@ -14,9 +14,9 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="fb:app_id" content="397128703965407">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,47 +30,66 @@
                 data-toggle="collapse" data-target=".navbar-collapse">
           <span class="glyphicon glyphicon-align-justify"></span></p>
         </button>
-        <a class="navbar-brand" href="#home-page">
+        <a class="navbar-brand" href="#0-home-page">
           <img class="img-responsive logo-brand" alt="Lokole logo" src="logo-1200x630.png"/></a>
       </div>
       
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right" id="navbar-menu">
-          <li data-menuanchor="1-about" class="active"><a href="#about">About</a></li>
-          <li data-menuanchor="2-take-action"><a href="#take-action">Take action content</a></li>
-          <li data-menuanchor="3-media"><a href="#media">Media</a></li>
+          <li data-menuanchor="1-about" class="active"><a href="#1-about">About</a></li>
+          <li data-menuanchor="2-take-action"><a href="#2-take-action">Take action content</a></li>
+          <li data-menuanchor="3-media"><a href="#3-media">Media</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <div id="fullpage">
-    <div class="section" data-menuanchor='0-home-page' id="home-page">
+    <div class="section" id="home-page">
       <div class="container-fluid">
         <h1 class="text-center">Lokole: email for all</h1>
         <h3 class="text-center">
-          Lokole is Ascoderu's custom device that bring affordable email in unconnected rural communities in Africa.
+          Lokole is Ascoderu's custom device that brings affordable email to unconnected rural communities in Africa.
         </h3>
-        <p>Third item to make a flexbox itself.</p>
+
+        <blockquote class="blockquote">
+        <p class="mb-0"><em>The capacity to receive, download and share information
+          through electronic networks, the freedom to communicate freely across
+          national boundaries -- these must become realities for all people.</em></p>
+          <footer class="blockquote-footer text-right">Kofi Annan</footer>
+        </blockquote>
+
+        <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
+          <a href="#1-about"><span class="glyphicon glyphicon-menu-down"></span></a>
+        </button>
       </div>
     </div>
+
     <div class="section" id="about">
       <div class="container-fluid">
         <h1 class="text-center">Title about page</h1>
+        <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
+          <a href="#2-take-action"><span class="glyphicon glyphicon-menu-down"></span></a>
+        </button>
       </div>
     </div>
+
     <div class="section" id="take-action">
       <div class="container-fluid">
         <h1 class="text-center">Take action page content</h1>
+        <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
+          <a href="#3-media"><span class="glyphicon glyphicon-menu-down"></span></a>
+        </button>
       </div>
     </div>
+
     <div class="section" id="media">
       <div class="container-fluid">
         <h1 class="text-center">Media and articles coverage</h1>
       </div>
     </div>
-  </div>
 
+  </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

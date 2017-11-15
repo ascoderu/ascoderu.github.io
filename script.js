@@ -8,7 +8,7 @@ function checkDevice(height, width) {
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['0-home-page', '1-about', '2-take-action', '3-media'],
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#000'],
+    sectionsColor: ['#4BBFC3', '#f2f2f2', '#7BAABE', '#000'],
     menu:"#navbar-menu",
     scrollBar: true,
     responsiveHeight: screenSize[0],
@@ -30,6 +30,6 @@ $(document).ready(function() {
   });
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
   });
 });

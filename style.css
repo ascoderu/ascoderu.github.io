@@ -40,6 +40,10 @@ ul {
   background: #222;  
 }
 
+.section .container-fluid .btn-lg {
+  border-radius: 50%;
+}
+
 @media (max-width: 500px) {
   .profile-image {
     width: 80px;
