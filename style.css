@@ -25,7 +25,7 @@ body {
   margin: 5px;
 }
 
-ul {
+ul#navbar-menu {
   display: block;
   vertical-align: middle;
   padding-top: 15px;
@@ -44,32 +44,50 @@ ul {
   border-radius: 50%;
 }
 
-@media (max-width: 500px) {
-  .profile-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-    display: inline-block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    }
-    
-  .subtitle .skype {
-    display: block;
-  }
-    
-  .after-slash:after {
-    content: "" !important;
-  }
-}
+
 
 #home-page .container-fluid,
-#about .container-fluid,
-#take-action .container-fluid,
-#media .container-fluid {
+#help-us .container-fluid,
+#media .container-fluid,
+.about-box.about-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+#lokole-body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#lokole-cost, #how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  #lokole-cost#lokole-cost,
+  #how-it-works,#how-it-works {
+    width: 100%;
+  }
+}
+
+
+img.img-thumbnail {
+  max-width: 150px;
+}
+
+.row.top-utils-row {
+  height: 70px;
+  visibility: hidden;
 }

@@ -16,7 +16,7 @@
   <meta property="fb:app_id" content="397128703965407">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,14 +31,15 @@
           <span class="glyphicon glyphicon-align-justify"></span></p>
         </button>
         <a class="navbar-brand" href="#0-home-page">
-          <img class="img-responsive logo-brand" alt="Lokole logo" src="logo-1200x630.png"/></a>
+          <img class="img-responsive logo-brand" alt="Lokole logo" src="static/logo-1200x630.png"/></a>
       </div>
       
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right" id="navbar-menu">
           <li data-menuanchor="1-about" class="active"><a href="#1-about">About</a></li>
-          <li data-menuanchor="2-take-action"><a href="#2-take-action">Take action content</a></li>
-          <li data-menuanchor="3-media"><a href="#3-media">Media</a></li>
+          <li data-menuanchor="2-lokole"><a href="#2-lokole">Lokole</a></li>
+          <li data-menuanchor="3-help-us"><a href="#3-help-us">Help us</a></li>
+          <li data-menuanchor="4-media"><a href="#4-media">News & Media</a></li>
         </ul>
       </div>
     </div>
@@ -66,19 +67,141 @@
     </div>
 
     <div class="section" id="about">
-      <div class="container-fluid">
-        <h1 class="text-center">Title about page</h1>
+      <div class="container-fluid text-center">
+        <div class="row top-utils-row"><!--avoid overlaps with navbar--></div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <h2>Our Mission</h2>
+            <p>Ascoderu aims to connect the unconnected by enabling rural communities
+              to cheaply and sustainably access the global communication email networks
+              and the internet.</p>
+            <p>We believe that emails can speed up the process of local development
+              by improving education, health services and economic opportunities.</p>
+            <p>Our mission contributes towards the UN Sustainable Development Goals 9:
+               industry, innovation and infrastructures.</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <h2>Our History</h2>
+            <p>Ascoderu is a Congolese-Canadian NGO founded by Nzola Swasisa
+              in Victoria BC in 2010.</p>
+            <p>Between 2010-15, Ascoderu build REC and the team went to the Congo
+              to deploy the proof-of-concept email-device. The responses were
+              positive although the device was unreliable. The proof-of-concept
+              was successful though - and today we got our 2nd prototype
+              called Lokole ready for the next deployments.
+            </p>
+            <p></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <h2>Our Team</h2>
+            <p>Nothing would have happen without fourder Nzola Swasisa. Nzola is a native of the
+              African country DRC and while being employed by the humanitarian
+              organization <a href="#">Mission Aviation Fellowship</a> in the Congo,
+              Angola, Namibia, South Africa and Zambia for 19 years, he developed
+              expertise with communications devices and an acute understanding of
+              the communication problems in rural sub-Saharan Africa.</p>
+            <p>Since 2016, <a href="#">Clemens Wolff</a> (CTO of Ascoderu and lead developer) joined
+              the team by building the custom software alongside with Laura Barluzzi
+              (COO and web-developer).</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <h2>Our Lokole</h2>
+            <p>Lokole is the name of our custom device built on RasberryPi and/or OrangePi. Lokole
+               is a small portable plug-and-play device ready to work wherever there's cellular coverage.
+               Ready for deployments, Lokole devices are ready to change the life of many! Please read more about
+               <a href="#">Lokole</a>.</p>
+            <p>The name of "Lokole" was proposed by a partner in the Congo as the word
+              refers to the <a href="https://en.wikipedia.org/wiki/Lokole">slit drum</a>
+              that traditionally was used for long-distance communication in some
+              areas of the Congo.</p>
+          </div>
+        </div>
+
         <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
-          <a href="#2-take-action"><span class="glyphicon glyphicon-menu-down"></span></a>
+          <a href="#2-lokole"><span class="glyphicon glyphicon-menu-down"></span></a>
         </button>
       </div>
     </div>
 
-    <div class="section" id="take-action">
+    <div class="section" id="lokole">
+      <div class="container-fluid text-center">
+        <div class="row top-utils-row"><!--avoid overlaps with navbar--></div>
+        <h1 class="text-center">Our Lokole Device</h1>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <h2>How does it work?</h2>
+            <ul class="text-left">
+              <li>Plug Lokole with cable or to a battery</li>
+              <li>Lokole produce a 25m(? in) radio WiFi network</li>
+              <li>With your device detect the Lokole wifi and connect</li>
+              <li>Create an account using an user-name and password</li>
+              <li>Send, Receive emails with attachments at the desired daily frequency</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-xs-12 text-center">
+            <img src="static/lokole-vertical.jpg" class="img-thumbnail img-responsive"/>
+          </div>
+
+          <div class="col-md-4 col-xs-12">
+            <h2>How much does it cost?</h2>
+            <ol class="text-left">
+              <li>RasberryPi $ or OrangePi $</li>
+              <li>SIM card $</li>
+              <li>Something else $</li>
+              <li>Other thing $</li>
+            </ol>
+          </div>
+        </div>
+
+
+        <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
+          <a href="#3-help-us"><span class="glyphicon glyphicon-menu-down"></span></a>
+        </button>
+      </div>
+    </div>
+
+
+    <!--<div class="section" id="lokole">-->
+      <!--<div class="container-fluid">-->
+        <!--<h1 class="text-center">Our Lokole Device</h1>-->
+        <!--<div id="lokole-body">-->
+          <!--<div id="how-it-works">-->
+            <!--<h2>How does it work?</h2>-->
+            <!--<ul>-->
+              <!--<li>Plug Lokole with cable or to a battery</li>-->
+              <!--<li>Lokole produce a 25m(? in) radio WiFi network</li>-->
+              <!--<li>With your device detect the Lokole wifi and connect</li>-->
+              <!--<li>Create an account using an user-name and password</li>-->
+              <!--<li>Send, Receive emails with attachments at the desired daily frequency</li>-->
+              <!--<p>The affordability relies on the fact that using the Lokole email app,-->
+              <!--writing, and sending an email can all be done offline!</p>-->
+            <!--</ul>-->
+          <!--</div>-->
+          <!--<img src="static/lokole-vertical.jpg" class="img-thumbnail img-responsive"/>-->
+          <!--<div id="lokole-cost">-->
+            <!--<h2>How much does it cost?</h2>-->
+            <!--<ol>-->
+              <!--<li>RasberryPi $ or OrangePi $</li>-->
+              <!--<li>SIM card $</li>-->
+              <!--<li>Something else $</li>-->
+              <!--<li>Other thing $</li>-->
+            <!--</ol>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">-->
+          <!--<a href="#3-help-us"><span class="glyphicon glyphicon-menu-down"></span></a>-->
+        <!--</button>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <div class="section" id="help-us">
       <div class="container-fluid">
         <h1 class="text-center">Take action page content</h1>
         <button class="btn btn-lg" data-toggle="tooltip" title="next page" data-placement="left">
-          <a href="#3-media"><span class="glyphicon glyphicon-menu-down"></span></a>
+          <a href="#4-media"><span class="glyphicon glyphicon-menu-down"></span></a>
         </button>
       </div>
     </div>
