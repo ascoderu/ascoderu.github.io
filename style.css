@@ -1,8 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
+
+/* general styling */
 body {
   padding-top: 70px;
   overflow-y: hidden;
+}
+
+/* footer styling */
+
+.footer-fixed-bottom {
+  bottom: 0;
+  height: auto;
+  text-align: center;
+  position: absolute;
+}
+
+.section .footer-fixed-bottom .btn-lg {
+  border-radius: 50%;
 }
 
 /* header styling */
@@ -11,6 +26,7 @@ body {
   border-width: 0px !important;
   color: #9d9d9d;
   height: auto;
+  padding-bottom: 15px;
 }
 
 .navbar-brand {
@@ -40,11 +56,12 @@ ul#navbar-menu {
   background: #222;  
 }
 
-.section .container-fluid .btn-lg {
-  border-radius: 50%;
+/* section styling */
+
+.row.top-utils-row {
+  height: 70px;
+  visibility: hidden;
 }
-
-
 
 #home-page .container-fluid,
 #help-us .container-fluid,
@@ -57,37 +74,19 @@ ul#navbar-menu {
   align-content: center;
 }
 
-#lokole-body {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+.col-bg {
+  background-color: rgb(255, 255, 87);
+  background-color: rgb(255, 255, 87, 0.8);
+  border-radius: 5%;
+  margin: 10px;
+  padding: 10px;
 }
 
-#lokole-cost, #how-it-works {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  width: 30%;
-}
+/* mobile and tablet styling */
 
 @media (max-width: 600px) {
   #lokole-cost#lokole-cost,
   #how-it-works,#how-it-works {
     width: 100%;
   }
-}
-
-
-img.img-thumbnail {
-  max-width: 150px;
-}
-
-.row.top-utils-row {
-  height: 70px;
-  visibility: hidden;
 }
