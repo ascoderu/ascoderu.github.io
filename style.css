@@ -1,8 +1,8 @@
 /*
 yellow: rgb(255, 255, 87);
 red: ;
-light-blue: ;
-whitish: rgb(255, 255, 255);
+light-blue: rgb(75, 191, 195);
+whitish: rgb(242, 242, 242);
 */
 
 /* general styling */
@@ -10,7 +10,7 @@ whitish: rgb(255, 255, 255);
 body {
   padding-top: 70px;
   overflow-y: hidden;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(242, 242, 242);
 }
 
 /* footer styling */
@@ -118,27 +118,22 @@ ul#navbar-menu {
   padding: 10px;
 }
 
-
 a.no-style {
   text-decoration: none;
+  color: rgb(51, 51, 51);
 }
 
 .box {
-  background-color: #dce5f4;
-  color: #333;
   margin: 10px;
   padding: 5px 20px 5px 20px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 125%;
+  font-weight: 700%;
 }
 .box:hover {
+  background-color: rgb(255, 255, 87);
+  border-radius: 3px;
   border-left-style: solid;
-  border-left-color: #EE8D00;
-}
-
-.text-box {
-  font-size: 20px;
-  color: #333;
+  border-left-color: rgb(75, 191, 195);
 }
 
 /* mobile and tablet styling */
