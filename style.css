@@ -10,7 +10,6 @@ whitish: rgb(255, 255, 255);
 body {
   padding-top: 70px;
   overflow-y: hidden;
-  font-size: 170%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -70,6 +69,11 @@ ul#navbar-menu {
   visibility: hidden;
 }
 
+.row.bottom-utils-row {
+  height: 40px;
+  visibility: hidden;
+}
+
 #home-page .container-fluid,
 #media .container-fluid,
 .about-box.about-box {
@@ -114,6 +118,29 @@ ul#navbar-menu {
   padding: 10px;
 }
 
+
+a.no-style {
+  text-decoration: none;
+}
+
+.box {
+  background-color: #dce5f4;
+  color: #333;
+  margin: 10px;
+  padding: 5px 20px 5px 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.box:hover {
+  border-left-style: solid;
+  border-left-color: #EE8D00;
+}
+
+.text-box {
+  font-size: 20px;
+  color: #333;
+}
+
 /* mobile and tablet styling */
 
 @media (max-width: 600px) {
@@ -124,5 +151,9 @@ ul#navbar-menu {
 
   #help-us#help-us .container-fluid {
     padding: 10px;
+  }
+
+  .footer-fixed-bottom.footer-fixed-bottom {
+    visibility: hidden;
   }
 }
