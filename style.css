@@ -1,10 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-
+/*
+yellow: rgb(255, 255, 87);
+red: ;
+light-blue: ;
+whitish: rgb(255, 255, 255);
+*/
 
 /* general styling */
+
 body {
   padding-top: 70px;
   overflow-y: hidden;
+  font-size: 170%;
+  background-color: rgb(255, 255, 255);
 }
 
 /* footer styling */
@@ -21,6 +28,7 @@ body {
   }
 
 /* header styling */
+
 .navbar-fixed-top {
   top: 0;
   border-width: 0px !important;
@@ -63,7 +71,6 @@ ul#navbar-menu {
 }
 
 #home-page .container-fluid,
-#help-us .container-fluid,
 #media .container-fluid,
 .about-box.about-box {
   display: flex;
@@ -71,6 +78,31 @@ ul#navbar-menu {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: 0px 50px;
+}
+
+#help-us .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0px 50px;
+} .action-thumbnail {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+  } .action-thumbnail p {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+.action-thumbnail:hover {
+      background-color: rgb(255, 255, 87);
 }
 
 .col-bg {
@@ -87,5 +119,9 @@ ul#navbar-menu {
   #lokole-cost#lokole-cost,
   #how-it-works,#how-it-works {
     width: 100%;
+  }
+
+  #help-us#help-us .container-fluid {
+    padding: 10px;
   }
 }
