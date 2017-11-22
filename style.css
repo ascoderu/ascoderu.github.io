@@ -15,10 +15,7 @@ body {
 
 #fullpage.container-fluid {
   padding-top: 70px;
-}
-
-.large-font {
-  font-size: 180%;
+  padding-bottom: 500px;
 }
 
 /* footer styling */
@@ -112,14 +109,27 @@ ul#navbar-menu {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-} .sub-section {
+} .half-section {
     display: flex;
     max-width: 50%;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     margin: 10px;
+  } .quarter-section {
+      height: 50%;
+      background-color: yellow;
+    }
+
+#lokole .container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+} .half-screen {
+    width: 50%;
   }
+
 
 #help-us .container-fluid {
   display: flex;
@@ -127,7 +137,6 @@ ul#navbar-menu {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 0px 50px;
 } .action-thumbnail {
     height: 150px;
     width: 150px;
@@ -175,10 +184,6 @@ a.no-style {
 /* mobile and tablet styling */
 
 @media (max-width: 600px) {
-  #lokole-cost#lokole-cost,
-  #how-it-works,#how-it-works {
-    width: 100%;
-  }
 
   #help-us#help-us .container-fluid {
     padding: 10px;
