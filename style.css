@@ -130,6 +130,17 @@ ul#navbar-menu {
     width: 50%;
   }
 
+/* tables */
+
+#tables {
+  display: flex;
+  justify-content: center;
+}
+
+#lokole-cost, #upgrade-cost {
+  width: auto;
+  margin: 10px;
+}
 
 #help-us .container-fluid {
   display: flex;
@@ -166,6 +177,10 @@ ul#navbar-menu {
 a.no-style {
   text-decoration: none;
   color: rgb(51, 51, 51);
+}
+
+#home-page a:hover {
+  color: white;
 }
 
 .box {
