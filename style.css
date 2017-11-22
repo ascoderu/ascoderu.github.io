@@ -11,6 +11,13 @@ body {
   padding-top: 70px;
   overflow-y: hidden;
   background-color: rgb(242, 242, 242);
+}
+
+#fullpage.container-fluid {
+  padding-top: 70px;
+}
+
+.large-font {
   font-size: 180%;
 }
 
@@ -107,6 +114,7 @@ ul#navbar-menu {
   align-content: center;
 } .sub-section {
     display: flex;
+    max-width: 50%;
     flex-direction: column;
     justify-content: center;
     align-content: center;
