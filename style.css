@@ -70,14 +70,12 @@ ul#navbar-menu {
   background: #222;  
 }
 
-
-/* backgrounds */
+/* backgrounds of sections and subsections */
 
 #home-page {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-
 
 /* section styling */
 
@@ -92,8 +90,7 @@ ul#navbar-menu {
 }
 
 #home-page .container-fluid,
-#media .container-fluid,
-.about-box.about-box {
+#media .container-fluid {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,6 +98,20 @@ ul#navbar-menu {
   align-content: center;
   padding: 0px 50px;
 }
+
+#about .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+} .sub-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+  }
 
 #help-us .container-fluid {
   display: flex;
