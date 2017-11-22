@@ -11,6 +11,7 @@ body {
   padding-top: 70px;
   overflow-y: hidden;
   background-color: rgb(242, 242, 242);
+  font-size: 180%;
 }
 
 /* footer styling */
@@ -25,6 +26,13 @@ body {
 } .btn-lg {
     border-radius: 50%;
   }
+
+/* text styling */
+
+.text-white {
+  color: rgb(242, 242, 242);
+  text-weight: bold;
+}
 
 /* header styling */
 
