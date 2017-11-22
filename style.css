@@ -62,6 +62,15 @@ ul#navbar-menu {
   background: #222;  
 }
 
+
+/* backgrounds */
+
+#home-page {
+  background: url('static/home-page-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
 /* section styling */
 
 .row.top-utils-row {
