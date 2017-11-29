@@ -13,9 +13,9 @@ body {
   background-color: rgb(242, 242, 242);
 }
 
-#fullpage.container-fluid {
+#fullpage.section {
   padding-top: 70px;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
 }
 
 /* footer styling */
@@ -95,6 +95,10 @@ ul#navbar-menu {
 
 #home-page .container-fluid,
 #media .container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,25 +107,12 @@ ul#navbar-menu {
   padding: 0px 50px;
 }
 
-#about .container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-} .half-section {
-    display: flex;
-    max-width: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 10px;
-  } .quarter-section {
-      height: 50%;
-      background-color: yellow;
-    }
-
+#about .container-fluid,
 #lokole .container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,6 +134,10 @@ ul#navbar-menu {
 }
 
 #help-us .container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -177,6 +172,15 @@ ul#navbar-menu {
 a.no-style {
   text-decoration: none;
   color: rgb(51, 51, 51);
+}
+
+/* about modals */
+
+#info1, #info2 {
+  text-align: left;
+}
+#info1:hover, #info2:hover {
+  background-color: gb(255, 255, 87);
 }
 
 #home-page a:hover {

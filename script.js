@@ -1,3 +1,8 @@
+function assignDataContent() {
+  $("#info1").data("content", '<p>first modal</b>');
+  $("#info2").data("content", '<p>second modal</b>');
+}
+
 function checkDevice(height, width) {
   var small = [800, 1000];
   var heightIsLower = height < small[0];
@@ -18,7 +23,8 @@ function setUpFullpage(screenSize) {
 
 
 $(document).ready(function() { 
-  
+  assignDataContent();
+
   var heightScreen = $(window).height(); 
   var widthScreen = $(window).width();
 
@@ -31,6 +37,11 @@ $(document).ready(function() {
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  $("div[rel='modal']").click(function(event){
+    console.log("selectino works!");
+    BootstrapDialog.alert("Hello world!");
   });
 
 });
