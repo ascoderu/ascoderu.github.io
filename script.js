@@ -1,6 +1,6 @@
-function assignDataContent() {
-  $("#info1").data("content", '<p>first modal</b>');
-  $("#info2").data("content", '<p>second modal</b>');
+function assignDataContentToModals() {
+  $("#info1").data("content", 'text history of Ascoderu');
+  $("#info2").data("content", 'text hisotry of REC & Lokole');
 }
 
 function checkDevice(height, width) {
@@ -13,7 +13,7 @@ function checkDevice(height, width) {
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['0-home-page', '1-about', '2-lokole', '3-help-us', '4-media'],
-    sectionsColor: ['', '', '', '', ''],
+    sectionsColor: ['', '#DFE2DB', '', '', ''],
     menu:"#navbar-menu",
     scrollBar: true,
     responsiveHeight: screenSize[0],
@@ -23,7 +23,7 @@ function setUpFullpage(screenSize) {
 
 
 $(document).ready(function() { 
-  assignDataContent();
+  assignDataContentToModals();
 
   var heightScreen = $(window).height(); 
   var widthScreen = $(window).width();
@@ -40,8 +40,13 @@ $(document).ready(function() {
   });
 
   $("div[rel='modal']").click(function(event){
-    console.log("selectino works!");
-    BootstrapDialog.alert("Hello world!");
+    var clicked = $(this);
+    var modalContent =  clicked.data("content");
+
+    BootstrapDialog.show({
+      title: 'The history of Ascoderu',
+      message: modalContent
+    });
   });
 
 });
