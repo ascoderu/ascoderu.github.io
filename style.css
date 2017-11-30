@@ -175,6 +175,10 @@ ul#navbar-menu {
   cursor: pointer;
 }
 
+#team-block {
+  width: 100%;
+}
+
 #info1:hover, #info2:hover {
   background-color: rgb(255, 255, 87);
 }
