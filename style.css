@@ -1,8 +1,8 @@
 /*
-yellow: rgb(255, 255, 87);
-red: ;
-light-blue: rgb(75, 191, 195);
-whitish: rgb(242, 242, 242);
+yellow: #FFF056 or rgb(255, 240, 86);
+dark-black: #191919 or rgb(25, 25, 25);
+light-grey: #DFE2DB or rgb(223, 226, 219);
+white: #FFFFFF or rgb(255, 255, 255);
 */
 
 /* general styling */
@@ -107,8 +107,30 @@ ul#navbar-menu {
   padding: 0px 50px;
 }
 
+#contact .container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+}
+
+.contact-email-block .member-contact {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
 #about .container-fluid,
-#lokole .container-fluid {
+#lokole .container-fluid,
+.contact-email-block {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -198,6 +220,17 @@ a.no-style {
 
 #home-page a:hover {
   color: white;
+}
+
+#nzola-profile,
+#clemens-profile,
+#laura-profile {
+  width: 80px;
+  height: 80px;
+  margin: 10px 15px;
+  border-style: solid;
+  border-width: medium;
+  border-color: rgb(255, 255, 255);
 }
 
 .box {
