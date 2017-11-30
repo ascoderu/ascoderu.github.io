@@ -10,12 +10,31 @@ white: #FFFFFF or rgb(255, 255, 255);
 body {
   padding-top: 70px;
   overflow-y: hidden;
-  background-color: rgb(242, 242, 242);
+  color: rgb(25, 25, 25);
+  background-color: rgb(223, 226, 219);
+  font-size: 16px; /* default small text*/
 }
 
 #fullpage.section {
   padding-top: 70px;
   padding-bottom: 50px;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+  text-weight: bold;
+}
+
+.medium {
+  font-size: 20px;
+}
+
+.large {
+  font-size: 30px;
+}
+
+.glyphicon {
+  color: rgb(25, 25, 25);
 }
 
 /* footer styling */
@@ -27,15 +46,13 @@ body {
   bottom: 0;
   padding-bottom: 15px;
   text-align: center;
-} .btn-lg {
+}.btn-lg {
     border-radius: 50%;
+    background-color: rgb(223, 226, 219);
   }
 
-/* text styling */
-
-.text-white {
-  color: rgb(242, 242, 242);
-  text-weight: bold;
+.btn-lg.next:hover {
+  background-color: rgb(255, 240, 86);
 }
 
 /* header styling */
