@@ -13,7 +13,7 @@ function checkDevice(height, width) {
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['0-home-page', '1-about', '2-lokole', '3-help-us', '4-media', '5-contact'],
-    sectionsColor: ['', '#DFE2DB', '', '', ''],
+    sectionsColor: ['', '', '', '', '', ''],
     menu:"#navbar-menu",
     scrollBar: true,
     responsiveHeight: screenSize[0],

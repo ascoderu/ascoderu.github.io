@@ -115,8 +115,21 @@ ul#navbar-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#members-team {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: baseline;
   align-content: center;
+  padding: 10px;
 }
 
 .contact-email-block .member-contact {
@@ -130,7 +143,8 @@ ul#navbar-menu {
 
 #about .container-fluid,
 #lokole .container-fluid,
-.contact-email-block {
+.contact-email-block,
+#team-block {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -228,9 +242,11 @@ a.no-style {
   width: 80px;
   height: 80px;
   margin: 10px 15px;
-  border-style: solid;
-  border-width: medium;
-  border-color: rgb(255, 255, 255);
+}
+
+#image-team img {
+  max-width: 425px;
+  margin: 0 auto;
 }
 
 .box {
