@@ -11,14 +11,24 @@ white: #FFFFFF or rgb(255, 255, 255);
 body {
   padding-top: 70px;
   overflow-y: hidden;
+  font-size: 16px;
   color: rgb(25, 25, 25);
   background-color: rgb(223, 226, 219);
-  font-size: 16px; /* default small text*/
 }
 
-#fullpage.section {
-  padding-top: 70px;
-  padding-bottom: 50px;
+#fullpage.section.container-fluid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 70px 15px 50px 15px;
+  width: 100%;
+  height: 100%;
 }
 
 .text-white {
@@ -114,20 +124,6 @@ ul#navbar-menu {
 .row.bottom-utils-row {
   height: 40px;
   visibility: hidden;
-}
-
-#home-page .container-fluid,
-#media .container-fluid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 0px 50px;
 }
 
 #contact .container-fluid {
