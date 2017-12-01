@@ -42,10 +42,14 @@ body {
 }
 
 .large {
+  font-size: 27px;
+}
+
+.extra-large {
   font-size: 30px;
 }
 
-.glyphicon {
+.glyphicon.glyphicon {
   color: rgb(25, 25, 25);
 }
 
@@ -58,10 +62,14 @@ body {
   bottom: 0;
   padding-bottom: 15px;
   text-align: center;
-}.btn-lg {
-    border-radius: 50%;
-    background-color: rgb(223, 226, 219);
+} .btn-next {
+     border-radius: 50%;
+     background-color: rgb(223, 226, 219);
   }
+
+.btn-next:hover {
+  background-color: rgb(255, 240, 86);
+}
 
 .footer-fixed-bottom {
   position: absolute;
@@ -73,24 +81,22 @@ body {
   background-color: rgb(25, 25, 25);
 }
 
-.btn-lg.next:hover {
-  background-color: rgb(255, 240, 86);
-}
-
-/* header styling */
+/* navbar styling */
 
 .navbar-fixed-top.navbar-fixed-top {
   top: 0;
   height: auto;
   border-width: 0px !important;
-  color: rgb(223, 226, 219);
   background-color: rgb(25, 25, 25);
 }
 
 .navbar-brand {
-  margin-left: 0em;
-  padding: 0em;
+  margin-left: 0;
+  padding: 0;
   height: 100%;
+}
+
+.navbar-brand.navbar-brand:hover {
   background-color: rgb(255, 240, 86);
 }
 
@@ -101,11 +107,9 @@ body {
 
 ul#navbar-menu {
   display: block;
-  vertical-align: middle;
   padding-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
 }
+
 .navbar-inverse .navbar-nav > li > a:focus {
   color: rgb(157,157,157);
 }
@@ -118,36 +122,12 @@ ul#navbar-menu {
 }
 
 
-/* backgrounds of sections and subsections */
-
 #home-page {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
-/* section styling */
-
-.row.top-utils-row {
-  height: 70px;
-  visibility: hidden;
-}
-
-.row.bottom-utils-row {
-  height: 40px;
-  visibility: hidden;
-}
-
-#contact .container-fluid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
+/* sub-section styling */
 
 #members-team {
   display: -webkit-box;
@@ -159,7 +139,7 @@ ul#navbar-menu {
   justify-content: center;
   align-items: baseline;
   align-content: center;
-  padding: 10px;
+  padding-left: 20px;
 }
 
 .contact-email-block .member-contact {
@@ -183,9 +163,7 @@ ul#navbar-menu {
   justify-content: center;
   align-items: center;
   align-content: center;
-} .half-screen {
-    width: 50%;
-  }
+}
 
 #about .container-fluid .half-screen .about-modals {
   display: -webkit-box;
