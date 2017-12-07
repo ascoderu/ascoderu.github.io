@@ -1,12 +1,10 @@
-/*
-yellow: #FFF056 or rgb(255, 240, 86);
-dark-black: #191919 or rgb(25, 25, 25);
+/* COLORS:
+yellow: rgb(255, 240, 86);
+dark-black: rgb(25, 25, 25);
 dark-grey: rgb(157,157,157);
-light-grey: #DFE2DB or rgb(223, 226, 219);
-white: #FFFFFF or rgb(255, 255, 255);
+light-grey: rgb(223, 226, 219);
+white: rgb(255, 255, 255);
 */
-
-/* general styling */
 
 body {
   padding-top: 70px;
@@ -18,11 +16,12 @@ body {
 }
 
 #fullpage.section.container-fluid {
-
   padding: 70px 15px 50px 15px;
   width: 100%;
   height: 100%;
 }
+
+/* LAYOUTS */
 
 .vertical-layout {
   display: -webkit-box;
@@ -59,6 +58,8 @@ body {
   align-content: center;
 }
 
+/* TEXT STYLING */
+
 .text-white {
   color: rgb(255, 255, 255);
   text-weight: bold;
@@ -84,36 +85,7 @@ body {
   color: rgb(25, 25, 25);
 }
 
-/* footer styling */
-
-.transparent-section-footer {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  padding-bottom: 15px;
-  text-align: center;
-} .btn-next {
-     border-radius: 50%;
-     background-color: rgb(223, 226, 219);
-  }
-
-.btn-next:hover {
-  background-color: rgb(255, 240, 86);
-}
-
-.footer-fixed-bottom.footer-fixed-bottom {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  padding: 10px;
-  text-align: center;
-  background-color: rgb(25, 25, 25);
-  color: rgb(223, 226, 219);
-}
-
-/* navbar styling */
+/* NAVBAR */
 
 .navbar-fixed-top.navbar-fixed-top {
   top: 0;
@@ -153,15 +125,60 @@ ul#navbar-menu {
   background: rgb(25, 25, 25);
 }
 
+/* FOOTERS */
+
+.transparent-section-footer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  padding-bottom: 15px;
+  text-align: center;
+} .btn-next {
+     border-radius: 50%;
+     background-color: rgb(223, 226, 219);
+  }
+
+.col-bg {
+  background-color: rgb(255, 255, 87);
+  background-color: rgb(255, 255, 87, 0.8);
+  border-radius: 5%;
+  margin: 10px;
+  padding: 10px;
+}
+
+a.no-style {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.btn-next:hover {
+  background-color: rgb(255, 240, 86);
+}
+
+.footer-fixed-bottom.footer-fixed-bottom {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(25, 25, 25);
+  color: rgb(223, 226, 219);
+}
+
+/* #home-page */
+
 #home-page {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
-#members-team#members-team,
-.member-contact.member-contact{
-  align-items: start;
+#home-page a:hover {
+  color: white;
 }
+
+/* #about */
 
 #about-img, #modals {
   margin: 15px;
@@ -178,13 +195,14 @@ ul#navbar-menu {
   background-color: rgb(255, 255, 87);
 }
 
-/* tables */
+/* #lokole */
 
-
-#lokole-cost, #upgrade-cost {
-  width: auto;
-  margin: 10px;
+#lokole-img {
+  max-width: 300px;
+  margin: 15px;
 }
+
+/* #help-us */
 
 .action-thumbnail {
     height: 150px;
@@ -205,21 +223,11 @@ ul#navbar-menu {
       background-color: rgb(255, 255, 87);
 }
 
-.col-bg {
-  background-color: rgb(255, 255, 87);
-  background-color: rgb(255, 255, 87, 0.8);
-  border-radius: 5%;
-  margin: 10px;
-  padding: 10px;
-}
+/* #contact */
 
-a.no-style {
-  text-decoration: none;
-  color: rgb(51, 51, 51);
-}
-
-#home-page a:hover {
-  color: white;
+#members-team#members-team,
+.member-contact.member-contact{
+  align-items: start;
 }
 
 #nzola-profile,
@@ -252,12 +260,7 @@ a.no-style {
   border-left-color: rgb(75, 191, 195);
 }
 
-#lokole-img {
-  max-width: 300px;
-  margin: 15px;
-}
-
-/* mobile and tablet styling */
+/* MOBILE FRIENDLY */
 
 @media (max-width: 600px) {
 
