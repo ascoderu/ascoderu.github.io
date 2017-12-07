@@ -178,7 +178,7 @@ a.no-style {
   color: white;
 }
 
-/* #about */
+/* #history */
 
 #about-img, #modals {
   margin: 15px;
@@ -223,6 +223,21 @@ a.no-style {
       background-color: rgb(255, 255, 87);
 }
 
+/* #news */
+
+.box {
+  margin: 10px;
+  padding: 5px 20px 5px 20px;
+  font-weight: 700%;
+}
+
+.box:hover {
+  background-color: rgb(255, 255, 87);
+  border-radius: 3px;
+  border-left-style: solid;
+  border-left-color: rgb(75, 191, 195);
+}
+
 /* #contact */
 
 #members-team#members-team,
@@ -245,19 +260,6 @@ a.no-style {
 
 #image-team, #members-team {
   margin: 10px 20px;
-}
-
-.box {
-  margin: 10px;
-  padding: 5px 20px 5px 20px;
-  font-size: 125%;
-  font-weight: 700%;
-}
-.box:hover {
-  background-color: rgb(255, 255, 87);
-  border-radius: 3px;
-  border-left-style: solid;
-  border-left-color: rgb(75, 191, 195);
 }
 
 /* MOBILE FRIENDLY */
