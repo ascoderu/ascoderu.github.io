@@ -22,7 +22,7 @@ function checkDevice(height, width) {
 
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
-    anchors: ['0-home-page', '1-history', '2-lokole', '3-help-us', '4-news', '5-contact'],
+    anchors: ['0-home-page', '1-about', '2-lokole', '3-help-us', '4-media', '5-contact'],
     sectionsColor: ['', '', '', '', '', ''],
     menu:"#navbar-menu",
     scrollBar: true,
