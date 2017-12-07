@@ -180,10 +180,6 @@ ul#navbar-menu {
 
 /* tables */
 
-#tables {
-  display: flex;
-  justify-content: center;
-}
 
 #lokole-cost, #upgrade-cost {
   width: auto;
