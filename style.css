@@ -18,6 +18,13 @@ body {
 }
 
 #fullpage.section.container-fluid {
+
+  padding: 70px 15px 50px 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-layout {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -27,9 +34,29 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 70px 15px 50px 15px;
-  width: 100%;
-  height: 100%;
+}
+
+.row-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.row-layout.wrap-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .text-white {
@@ -126,7 +153,6 @@ ul#navbar-menu {
   background: rgb(25, 25, 25);
 }
 
-
 #home-page {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -156,33 +182,13 @@ ul#navbar-menu {
   flex-direction: column;
 }
 
-#about .container-fluid,
-#lokole .container-fluid,
-.contact-email-block,
-#team-block {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-#about .container-fluid .half-screen .about-modals {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
 /* about modals */
+#about-img, #modals {
+  margin: 15px;
+}
 
 #info1, #info2 {
+  padding: 15px;
   text-align: left;
   margin: 10px 15px 15px 0;
   cursor: pointer;
@@ -208,17 +214,7 @@ ul#navbar-menu {
   margin: 10px;
 }
 
-#help-us .container-fluid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-} .action-thumbnail {
+.action-thumbnail {
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -228,10 +224,11 @@ ul#navbar-menu {
     align-content: center;
     font-size: 50px;
     margin: 10px;
-  } .action-thumbnail p {
-      font-size: 30px;
-      padding-top: 20px;
-    }
+} .action-thumbnail p {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
 .action-thumbnail:hover {
       background-color: rgb(255, 255, 87);
 }
