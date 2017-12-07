@@ -158,31 +158,11 @@ ul#navbar-menu {
   background-size: cover;
 }
 
-/* sub-section styling */
-
-#members-team {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  align-content: center;
-  padding-left: 20px;
+#members-team#members-team,
+.member-contact.member-contact{
+  align-items: start;
 }
 
-.contact-email-block .member-contact {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-}
-
-/* about modals */
 #about-img, #modals {
   margin: 15px;
 }
@@ -192,10 +172,6 @@ ul#navbar-menu {
   text-align: left;
   margin: 10px 15px 15px 0;
   cursor: pointer;
-}
-
-#team-block {
-  width: 100%;
 }
 
 #info1:hover, #info2:hover {
@@ -261,6 +237,10 @@ a.no-style {
 #image-team img {
   max-width: 425px;
   margin: 0 auto;
+}
+
+#image-team, #members-team {
+  margin: 10px 20px;
 }
 
 .box {
