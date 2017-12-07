@@ -252,6 +252,11 @@ a.no-style {
   border-left-color: rgb(75, 191, 195);
 }
 
+#lokole-img {
+  max-width: 300px;
+  margin: 15px;
+}
+
 /* mobile and tablet styling */
 
 @media (max-width: 600px) {
