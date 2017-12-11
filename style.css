@@ -15,12 +15,6 @@ body {
   background-color: rgb(223, 226, 219);
 }
 
-#fullpage.section.container-fluid {
-  padding: 70px 15px 50px 15px;
-  width: 100%;
-  height: 100%;
-}
-
 /* LAYOUTS */
 
 .vertical-layout {
