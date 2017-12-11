@@ -1,3 +1,10 @@
+function setBackgroundColor(heightScreen) {
+  if (heightScreen > 1000) {
+    $("#home-page").css("background-image", "none");
+    $("#home-page").css("background-color", "rgb(133, 57, 98)");
+  }
+}
+
 function assignDataContentToModals() {
   var ascoderuStory = "Ascoderu founder & CEO, Nzola Swasisa, was born and raised in the Democratic Republic of the Congo (DRC) and at a young age he took electronics communications courses. " +
                       "For 19 years Nzola worked for Mission Aviation Fellowship (MAF) in 5 different countries; DRC, Angola, Namibia, South Africa and Zambia. " +
@@ -23,7 +30,7 @@ function checkDevice(height, width) {
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['0-home-page', '1-about', '2-lokole', '3-help-us', '4-media', '5-contact'],
-    sectionsColor: ['', '', '', '', '', ''],
+
     menu:"#navbar-menu",
     scrollBar: true,
     responsiveHeight: screenSize[0],
@@ -38,6 +45,7 @@ $(document).ready(function() {
   var heightScreen = $(window).height(); 
   var widthScreen = $(window).width();
 
+  setBackgroundColor(heightScreen);
   setUpFullpage(checkDevice(heightScreen, widthScreen));      
 
   // So the Mobile Nav Hides When a Link is Clicked
