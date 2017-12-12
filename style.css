@@ -150,12 +150,12 @@ a.no-style {
 
 /* #home-page */
 
-#home-page {
+[data-anchor="home-page"] {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
-#home-page a:hover {
+[data-anchor="home-page"] a:hover {
   color: white;
 }
 
