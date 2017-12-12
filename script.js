@@ -31,7 +31,6 @@ function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['0-home-page', '1-about', '2-lokole', '3-help-us', '4-media', '5-contact'],
     menu:"#navbar-menu",
-    scrollBar: true,
     paddingTop: '70px',
     paddingBottom: '60px',
     responsiveHeight: screenSize[0],
