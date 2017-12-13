@@ -168,7 +168,9 @@ a.no-style {
   cursor: pointer;
 }
 
-#info1:hover, #info2:hover {
+#info1:hover, #info2:hover,
+.action-thumbnail:hover,
+#trans-tutorial:hover {
   background-color: rgb(255, 255, 87);
 }
 
@@ -195,10 +197,6 @@ a.no-style {
     font-size: 30px;
     padding-top: 20px;
   }
-
-.action-thumbnail:hover {
-      background-color: rgb(255, 255, 87);
-}
 
 /* #contact */
 
