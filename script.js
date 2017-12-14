@@ -35,6 +35,9 @@ function setUpFullpage(screenSize) {
     paddingBottom: '60px',
     responsiveHeight: screenSize[0],
     responsiveWidth: screenSize[1],
+    afterRender: function() {
+      $("#website-content").css("display", "block");
+    }
   });
 }
 
