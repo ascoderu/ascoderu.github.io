@@ -48,6 +48,17 @@ body {
   align-content: center;
 }
 
+.vertical-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
 /* TEXT STYLING */
 
 .text-white {
@@ -266,7 +277,8 @@ a.no-style {
       align-content: center;
   }
 
-  .transparent-section-footer.transparent-section-footer {
+  .transparent-section-footer.transparent-section-footer,
+  .footer-fixed-bottom.footer-fixed-bottom{
     visibility: hidden;
   }
 }
