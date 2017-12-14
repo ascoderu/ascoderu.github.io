@@ -173,7 +173,7 @@ a.no-style {
 #info1, #info2 {
   padding: 15px;
   text-align: left;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 10px 10px;
   cursor: pointer;
 }
 
@@ -188,6 +188,10 @@ a.no-style {
 }
 
 /* #lokole */
+
+#lokole-intro {
+  margin: 15px;
+}
 
 #lokole-img {
   max-width: 300px;
