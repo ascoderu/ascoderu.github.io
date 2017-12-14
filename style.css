@@ -18,6 +18,11 @@ body {
   display: none;
 }
 
+#modal-1-content,
+#modal-2-content {
+  display: none;
+}
+
 /* LAYOUTS */
 
 .row-layout {
@@ -176,6 +181,10 @@ a.no-style {
 .action-thumbnail:hover,
 #trans-tutorial:hover {
   background-color: rgb(255, 255, 87);
+}
+
+.modal-body.modal-body {
+  text-align: left;
 }
 
 /* #lokole */

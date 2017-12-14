@@ -61,12 +61,12 @@ $(document).ready(function() {
   });
 
   $("div[rel='modal']").click(function(event){
-    var clicked = $(this);
-    var modalContent =  clicked.data("content");
+    var clickedModalId = $(this).data("reference");
+    var contentModalHtml = $("#"+clickedModalId).html();
 
     BootstrapDialog.show({
-      title: 'The history of Ascoderu',
-      message: modalContent
+      title: $(this).data("title"),
+      message: $('<div></div>').append(contentModalHtml)
     });
   });
 
