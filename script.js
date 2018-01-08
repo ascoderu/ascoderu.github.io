@@ -1,4 +1,3 @@
-
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['home-page', 'history', 'lokole', 'help-us', 'news', 'contact'],
@@ -10,6 +9,16 @@ function setUpFullpage(screenSize) {
     afterRender: function() {
       $("#website-content").show();
     }
+  });
+}
+
+function assignModalTitleAndContent(clicked) {
+  var clickedModalId = clicked.data("reference");
+  var contentModalHtml = $("#"+clickedModalId).html();
+
+  BootstrapDialog.show({
+    title: clicked.data("title"),
+    message: $('<div/>').append(contentModalHtml)
   });
 }
 
@@ -26,18 +35,10 @@ $(document).ready(function() {
     $(".navbar-collapse").collapse('hide');
   });
 
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-  });
+  $('[data-toggle="tooltip"]').tooltip();
 
   $("div[rel='modal']").click(function(event){
-    var clickedModalId = $(this).data("reference");
-    var contentModalHtml = $("#"+clickedModalId).html();
-
-    BootstrapDialog.show({
-      title: $(this).data("title"),
-      message: $('<div/>').append(contentModalHtml)
-    });
+    assignModalTitleAndContent($(this));
   });
 
 });
