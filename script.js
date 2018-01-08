@@ -1,9 +1,3 @@
-function checkDevice(height, width) {
-  var small = [800, 1000];
-  var heightIsLower = height < small[0];
-  var widthIsLower = width < small[1];
-  return (heightIsLower && widthIsLower) ? small : [0, 0];
-}
 
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
@@ -11,8 +5,8 @@ function setUpFullpage(screenSize) {
     menu:"#navbar-menu",
     paddingTop: '80px',
     paddingBottom: '60px',
-    responsiveHeight: screenSize[0],
-    responsiveWidth: screenSize[1],
+    responsiveHeight: screenSize.height,
+    responsiveWidth: screenSize.width,
     afterRender: function() {
       $("#website-content").css("display", "block");
     }
@@ -21,10 +15,12 @@ function setUpFullpage(screenSize) {
 
 $(document).ready(function() {
 
-  var heightScreen = $(window).height(); 
-  var widthScreen = $(window).width();
+  var screenSize = {
+    height: $(window).height(),
+    width: $(window).width()
+  };
 
-  setUpFullpage(checkDevice(heightScreen, widthScreen));      
+  setUpFullpage(screenSize);
 
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
