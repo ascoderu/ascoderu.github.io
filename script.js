@@ -1,10 +1,3 @@
-function setBackgroundColor(heightScreen) {
-  if (heightScreen > 1000) {
-    $("#home-page").css("background-image", "none");
-    $("#home-page").css("background-color", "rgb(133, 57, 98)");
-  }
-}
-
 function assignDataContentToModals() {
   var ascoderuStory = "Ascoderu founder & CEO, Nzola Swasisa, was born and raised in the Democratic Republic of the Congo (DRC) and at a young age he took electronics communications courses. " +
                       "For 19 years Nzola worked for Mission Aviation Fellowship (MAF) in 5 different countries; DRC, Angola, Namibia, South Africa and Zambia. " +
@@ -41,17 +34,14 @@ function setUpFullpage(screenSize) {
   });
 }
 
-
 $(document).ready(function() { 
   assignDataContentToModals();
 
   var heightScreen = $(window).height(); 
   var widthScreen = $(window).width();
 
-  setBackgroundColor(heightScreen);
   setUpFullpage(checkDevice(heightScreen, widthScreen));      
 
-  // So the Mobile Nav Hides When a Link is Clicked
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
