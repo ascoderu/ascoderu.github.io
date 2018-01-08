@@ -7,7 +7,7 @@ function setUpFullpage(screenSize) {
     responsiveHeight: screenSize.height,
     responsiveWidth: screenSize.width,
     afterRender: function() {
-      $("#website-content").show();
+      $("#website-content").removeClass("hidden");
     }
   });
 }

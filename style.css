@@ -6,20 +6,12 @@ light-grey: rgb(223, 226, 219);
 white: rgb(255, 255, 255);
 */
 
-#website-content {
-  display: none;
-}
-
 body {
   overflow-y: hidden;
   font-size: 16px;
   text-align: center;
   color: rgb(25, 25, 25);
   background-color: rgb(223, 226, 219);
-}
-
-#website-content {
-  display: none;
 }
 
 #modal-1-content,
