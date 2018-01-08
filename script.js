@@ -8,7 +8,7 @@ function setUpFullpage(screenSize) {
     responsiveHeight: screenSize.height,
     responsiveWidth: screenSize.width,
     afterRender: function() {
-      $("#website-content").css("display", "block");
+      $("#website-content").show();
     }
   });
 }
