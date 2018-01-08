@@ -115,7 +115,7 @@ ul#navbar-menu {
   padding-top: 15px;
 }
 
-.navbar-inverse .navbar-nav > li > a:focus {
+#menu-icon.glyphicon {
   color: rgb(157,157,157);
 }
 
