@@ -154,13 +154,13 @@ a.no-style {
 
 /* #home-page */
 
-[data-anchor="home-page"]#home {
+#home {
   background: url('static/home-page-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
-[data-anchor="home-page"]#home a:hover,
-[data-anchor="home-page"]#home a:focus {
+#home a:hover,
+#home a:focus {
   color: white;
 }
 
