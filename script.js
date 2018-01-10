@@ -1,3 +1,5 @@
+(function() {
+
 function setUpFullpage(screenSize) {
   $('#fullpage').fullpage({
     anchors: ['home-page', 'history', 'lokole', 'help-us', 'news', 'contact'],
@@ -42,3 +44,5 @@ $(document).ready(function() {
   });
 
 });
+
+})();
