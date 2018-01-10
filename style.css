@@ -166,14 +166,16 @@ a.no-style {
 
 /* #about */
 
-#info1, #info2 {
+#info1,
+#info2 {
   padding: 15px;
   text-align: left;
   margin: 10px 0 10px 10px;
   cursor: pointer;
 }
 
-#info1:hover, #info2:hover,
+#info1:hover,
+#info2:hover,
 .action-thumbnail:hover,
 #trans-tutorial:hover {
   background-color: rgb(255, 255, 87);
@@ -206,9 +208,11 @@ a.no-style {
   align-content: center;
   font-size: 50px;
   margin: 10px;
-} .action-thumbnail p {
-    padding-top: 20px;
-  }
+}
+
+.action-thumbnail p {
+  padding-top: 20px;
+}
 
 /* #news */
 
@@ -241,7 +245,8 @@ a.no-style {
   margin: 0 auto;
 }
 
-#image-team, #members-team {
+#image-team,
+#members-team {
   margin: 10px 20px;
 }
 
@@ -262,7 +267,7 @@ a.no-style {
   }
 
   .transparent-section-footer.transparent-section-footer,
-  .footer-fixed-bottom.footer-fixed-bottom{
+  .footer-fixed-bottom.footer-fixed-bottom {
     visibility: hidden;
   }
 }
