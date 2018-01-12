@@ -236,12 +236,11 @@ a.no-style {
 #clemens-profile,
 #laura-profile {
   width: 80px;
-  height: 80px;
   margin: 10px 15px;
 }
 
 #image-team img {
-  max-width: 425px;
+  width: 425px;
   margin: 0 auto;
 }
 
