@@ -1,13 +1,13 @@
 (function() {
 
-function setUpFullpage(screenSize) {
+function setUpFullpage() {
   $('#fullpage').fullpage({
     anchors: ['home-page', 'history', 'lokole', 'help-us', 'news', 'contact'],
     menu: '#navbar-menu',
     paddingTop: '80px',
     paddingBottom: '60px',
-    responsiveHeight: screenSize.height,
-    responsiveWidth: screenSize.width,
+    responsiveHeight: 800,
+    responsiveWidth: 800,
     afterRender: function() {
       $('#website-content').removeClass('hidden');
     }
@@ -26,12 +26,7 @@ function assignModalTitleAndContent($clicked) {
 
 $(document).ready(function() {
 
-  var screenSize = {
-    height: $(window).height(),
-    width: $(window).width()
-  };
-
-  setUpFullpage(screenSize);
+  setUpFullpage();
 
   $('.navbar-nav li a').click(function() {
     $('.navbar-collapse').collapse('hide');
