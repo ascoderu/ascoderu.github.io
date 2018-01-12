@@ -6,8 +6,7 @@ function setUpFullpage() {
     menu: '#navbar-menu',
     paddingTop: '80px',
     paddingBottom: '60px',
-    responsiveHeight: 800,
-    responsiveWidth: 800,
+    responsiveHeight: 700,
     afterRender: function() {
       $('#website-content').removeClass('hidden');
     }

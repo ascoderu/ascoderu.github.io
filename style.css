@@ -271,3 +271,9 @@ a.no-style {
     visibility: hidden;
   }
 }
+
+@media (max-height: 700px) {
+  .btn-next {
+    display: none;
+  }
+}
