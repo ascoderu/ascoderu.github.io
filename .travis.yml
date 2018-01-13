@@ -5,5 +5,5 @@ install:
   - npm install --global eslint csslint
 
 script:
-  - eslint --max-warnings=0 **/*.js
-  - csslint **/*.css || true
+  - eslint --max-warnings=0 script.js
+  - csslint style.css || true
