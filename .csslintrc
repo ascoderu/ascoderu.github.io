@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "adjoining-classes",
+    "ids"
+  ]
+}
