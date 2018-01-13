@@ -155,7 +155,10 @@ a.no-style {
 /* #home-page */
 
 #home {
-  background: url('static/home-page-bg.jpg') no-repeat center center fixed;
+  background-image: url('static/home-page-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
