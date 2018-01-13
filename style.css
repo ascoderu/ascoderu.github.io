@@ -1,45 +1,45 @@
 body {
-  overflow-y: hidden;
-  font-size: 16px;
-  text-align: center;
-  color: rgb(25, 25, 25);
   background-color: rgb(223, 226, 219);
+  color: rgb(25, 25, 25);
+  font-size: 16px;
+  overflow-y: hidden;
+  text-align: center;
 }
 
 /* LAYOUTS */
 
 .row-layout {
-  display: -webkit-box;
+  align-content: center;
+  align-items: center;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
 .row-wrap-layout {
-  display: -webkit-box;
+  align-content: center;
+  align-items: center;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 
 .vertical-layout {
-  display: -webkit-box;
+  align-items: flex-start;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
 }
 
 /* TEXT STYLING */
@@ -72,16 +72,16 @@ body {
 /* NAVBAR */
 
 .navbar-fixed-top.navbar-fixed-top {
-  top: 0;
-  height: auto;
-  border-width: 0 !important;
   background-color: rgb(25, 25, 25);
+  border-width: 0 !important;
+  height: auto;
+  top: 0;
 }
 
 .navbar-brand {
+  height: 100%;
   margin-left: 0;
   padding: 0;
-  height: 100%;
 }
 
 .navbar-brand.navbar-brand:hover {
@@ -105,24 +105,24 @@ body {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-  color: rgb(255, 240, 86);
   background: rgb(25, 25, 25);
+  color: rgb(255, 240, 86);
 }
 
 /* FOOTERS */
 
 .transparent-section-footer {
-  position: absolute;
-  width: 100%;
-  height: auto;
   bottom: 0;
+  height: auto;
   padding-bottom: 15px;
+  position: absolute;
   text-align: center;
+  width: 100%;
 }
 
 .btn-next {
-  border-radius: 50%;
   background-color: rgb(223, 226, 219);
+  border-radius: 50%;
 }
 
 .col-bg {
@@ -133,8 +133,8 @@ body {
 }
 
 a.no-style {
-  text-decoration: none;
   color: rgb(51, 51, 51);
+  text-decoration: none;
 }
 
 .btn-next:hover {
@@ -142,14 +142,14 @@ a.no-style {
 }
 
 .footer-fixed-bottom.footer-fixed-bottom {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  padding: 10px;
-  text-align: center;
   background-color: rgb(25, 25, 25);
+  bottom: 0;
   color: rgb(223, 226, 219);
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 /* #home-page */
@@ -168,10 +168,10 @@ a.no-style {
 
 #info1,
 #info2 {
+  cursor: pointer;
+  margin: 10px 0 10px 10px;
   padding: 15px;
   text-align: left;
-  margin: 10px 0 10px 10px;
-  cursor: pointer;
 }
 
 #info1:hover,
@@ -192,22 +192,22 @@ a.no-style {
 }
 
 #lokole-img {
-  max-width: 300px;
   margin: 15px;
+  max-width: 300px;
 }
 
 /* #help-us */
 
 .action-thumbnail {
-  height: 150px;
-  width: 150px;
+  align-content: center;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   font-size: 50px;
+  height: 150px;
+  justify-content: center;
   margin: 10px;
+  width: 150px;
 }
 
 .action-thumbnail p {
@@ -217,17 +217,17 @@ a.no-style {
 /* #news */
 
 .box {
-  margin: 10px;
-  padding: 5px 20px 5px 20px;
   font-size: 125%;
   font-weight: 700;
+  margin: 10px;
+  padding: 5px 20px 5px 20px;
 }
 
 .box:hover {
   background-color: rgb(255, 255, 87);
-  border-radius: 3px;
-  border-left-style: solid;
   border-left-color: rgb(75, 191, 195);
+  border-left-style: solid;
+  border-radius: 3px;
 }
 
 /* #contact */
@@ -235,13 +235,13 @@ a.no-style {
 #nzola-profile,
 #clemens-profile,
 #laura-profile {
-  width: 80px;
   margin: 10px 15px;
+  width: 80px;
 }
 
 #image-team img {
-  width: 425px;
   margin: 0 auto;
+  width: 425px;
 }
 
 #image-team,
@@ -254,15 +254,15 @@ a.no-style {
 @media (max-width: 700px) {
 
   #history-convert {
-    display: -webkit-box;
+    align-content: center;
+    align-items: center;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   .transparent-section-footer.transparent-section-footer,
