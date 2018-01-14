@@ -2,8 +2,9 @@ language: node_js
 node_js: node
 
 install:
-  - npm install --global eslint csslint
+  - npm install --global eslint csslint htmllint-cli
 
 script:
   - eslint --max-warnings=0 script.js
   - csslint style.css || true
+  - htmllint index.html || true
