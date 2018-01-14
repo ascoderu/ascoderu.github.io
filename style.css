@@ -73,7 +73,7 @@ body {
 
 .navbar-fixed-top.navbar-fixed-top {
   background-color: rgb(25, 25, 25);
-  border-width: 0 !important;
+  border-width: 0;
   height: auto;
   top: 0;
 }
@@ -126,7 +126,7 @@ body {
 }
 
 .col-bg {
-  background-color: rgb(255, 255, 87, 0.8);
+  background-color: #ffff57;
   border-radius: 5%;
   margin: 10px;
   padding: 10px;
@@ -135,6 +135,13 @@ body {
 a.no-style {
   color: rgb(51, 51, 51);
   text-decoration: none;
+}
+
+h1.no-style {
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 .btn-next:hover {
@@ -146,7 +153,8 @@ a.no-style {
   bottom: 0;
   color: rgb(223, 226, 219);
   height: auto;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -156,8 +164,8 @@ a.no-style {
 
 #home {
   background-image: url('static/home-page-bg.jpg');
-  background-repeat: no-repeat;
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
