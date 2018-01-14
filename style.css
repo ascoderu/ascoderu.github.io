@@ -1,6 +1,6 @@
 body {
-  background-color: rgb(223, 226, 219);
-  color: rgb(25, 25, 25);
+  background-color: #dfe2db;
+  color: #191919;
   font-size: 16px;
   overflow-y: hidden;
   text-align: center;
@@ -45,7 +45,7 @@ body {
 /* TEXT STYLING */
 
 .text-white {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -66,13 +66,13 @@ body {
 }
 
 .glyphicon.glyphicon {
-  color: rgb(25, 25, 25);
+  color: #191919;
 }
 
 /* NAVBAR */
 
 .navbar-fixed-top.navbar-fixed-top {
-  background-color: rgb(25, 25, 25);
+  background-color: #191919;
   border-width: 0;
   height: auto;
   top: 0;
@@ -85,7 +85,7 @@ body {
 }
 
 .navbar-brand.navbar-brand:hover {
-  background-color: rgb(255, 240, 86);
+  background-color: #faf056;
 }
 
 .logo-brand {
@@ -99,14 +99,14 @@ body {
 }
 
 #menu-icon {
-  color: rgb(157,157,157);
+  color: #9d9d9d;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
 .navbar-inverse .navbar-nav > .active > a:hover {
-  background: rgb(25, 25, 25);
-  color: rgb(255, 240, 86);
+  background: #191919;
+  color: #fff056;
 }
 
 /* FOOTERS */
@@ -121,7 +121,7 @@ body {
 }
 
 .btn-next {
-  background-color: rgb(223, 226, 219);
+  background-color: #dfe2db;
   border-radius: 50%;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 a.no-style {
-  color: rgb(51, 51, 51);
+  color: #333333;
   text-decoration: none;
 }
 
@@ -145,13 +145,13 @@ h1.no-style {
 }
 
 .btn-next:hover {
-  background-color: rgb(255, 240, 86);
+  background-color: #fff056;
 }
 
 .footer-fixed-bottom.footer-fixed-bottom {
-  background-color: rgb(25, 25, 25);
+  background-color: #191919;
   bottom: 0;
-  color: rgb(223, 226, 219);
+  color: #dfe2db;
   height: auto;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -188,7 +188,7 @@ h1.no-style {
 #info2:hover,
 .action-thumbnail:hover,
 #trans-tutorial:hover {
-  background-color: rgb(255, 255, 87);
+  background-color: #ffff57;
 }
 
 .modal-body.modal-body {
@@ -234,8 +234,8 @@ h1.no-style {
 }
 
 .box:hover {
-  background-color: rgb(255, 255, 87);
-  border-left-color: rgb(75, 191, 195);
+  background-color: #ffff57;
+  border-left-color: #4bbfc3;
   border-left-style: solid;
   border-radius: 3px;
 }
