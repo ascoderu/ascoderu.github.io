@@ -1,5 +1,8 @@
 {
     "indent-style": "spaces",
     "indent-width": 2,
+    "id-class-style": false,
+    "attr-name-style": false,
+    "img-req-src": false,
     "plugins": []
 }

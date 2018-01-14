@@ -7,4 +7,4 @@ install:
 script:
   - eslint --max-warnings=0 script.js
   - csslint style.css || true
-  - htmllint index.html || true
+  - htmllint index.html
