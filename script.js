@@ -6,7 +6,7 @@
       menu: '#navbar-menu',
       paddingTop: '80px',
       paddingBottom: '60px',
-      responsiveHeight: 700,
+      responsiveHeight: 600,
       afterRender: function() {
         $('#website-content').removeClass('hidden');
       }

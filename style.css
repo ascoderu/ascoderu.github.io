@@ -281,7 +281,7 @@ h1.no-style {
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 600px) {
   .btn-next {
     display: none;
   }
