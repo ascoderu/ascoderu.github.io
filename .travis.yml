@@ -1,10 +1,20 @@
 language: node_js
 node_js: node
+cache: npm
+
+branches:
+  only:
+    - development
 
 install:
-  - npm install --global eslint csslint htmllint-cli
+  - npm install
 
 script:
-  - eslint --max-warnings=0 script.js
-  - csslint style.css
-  - htmllint index.html
+  - npm run lint
+
+deploy:
+  provider: script
+  script: npm run deploy
+  skip_cleanup: true
+  on:
+    branch: development

@@ -1,0 +1,24 @@
+{
+  "name": "ascoderu.github.io",
+  "version": "1.0.0",
+  "description": " ",
+  "author": "Clemens Wolff",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}\"",
+    "lint.css": "csslint src/style.css",
+    "lint.html": "htmllint src/index.html",
+    "lint.js": "eslint --max-warnings=0 src/script.js",
+    "lint": "run-s lint.html lint.css lint.js",
+    "start": "reload --browser --dir src"
+  },
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^6.3.0",
+    "gh-pages": "^2.1.1",
+    "htmllint-cli": "^0.0.7",
+    "npm-run-all": "^4.1.5",
+    "reload": "^3.0.1"
+  }
+}
