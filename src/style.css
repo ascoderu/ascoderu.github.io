@@ -11,10 +11,6 @@ body {
 .row-layout {
   align-content: center;
   align-items: center;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   justify-content: center;
 }
@@ -22,10 +18,6 @@ body {
 .row-wrap-layout {
   align-content: center;
   align-items: center;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,10 +25,6 @@ body {
 
 .vertical-layout {
   align-items: flex-start;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -266,10 +254,6 @@ h1.no-style {
   #history-convert {
     align-content: center;
     align-items: center;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
