@@ -6,6 +6,14 @@ body {
   text-align: center;
 }
 
+a {
+  color: #1e4867;
+}
+
+caption {
+  color: #454545;
+}
+
 /* LAYOUTS */
 
 .row-layout {
