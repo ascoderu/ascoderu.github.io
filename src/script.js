@@ -1,18 +1,5 @@
 (function($, BootstrapDialog) {
 
-  function setUpFullpage() {
-    $('#fullpage').fullpage({
-      anchors: ['home-page', 'history', 'lokole', 'help-us', 'news', 'contact'],
-      menu: '#navbar-menu',
-      paddingTop: '80px',
-      paddingBottom: '60px',
-      responsiveHeight: 600,
-      afterRender: function() {
-        $('#website-content').removeClass('hidden');
-      }
-    });
-  }
-
   function assignModalTitleAndContent($clicked) {
     var clickedModalId = $clicked.data('reference');
     var contentModalHtml = $('#' + clickedModalId).html();
@@ -24,11 +11,15 @@
   }
 
   $(document).ready(function() {
+    $('section.fullpage').css('height', $(window).height() + 'px');
 
-    setUpFullpage();
+    $('body').scrollspy({ target: '.navbar-collapse', offset: 100 });
 
     $('.navbar-nav li a').click(function() {
       $('.navbar-collapse').collapse('hide');
+      $('.navbar-nav').find('.active').removeClass('active');
+      $(this).parent().addClass('active');
+      $('body, html').animate({ scrollTop: $($(this).attr('href')).offset().top - 70 }, 400);
     });
 
     $('[data-toggle="tooltip"]').tooltip();
@@ -37,6 +28,7 @@
       assignModalTitleAndContent($(this));
     });
 
+    $('body').removeClass('loading');
   });
 
 })(window.jQuery, window.BootstrapDialog);

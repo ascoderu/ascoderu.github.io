@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}\"",
-    "lint.css": "csslint src/style.css",
+    "lint.css": "csslint src",
     "lint.html": "htmllint src/index.html",
     "lint.js": "eslint --max-warnings=0 src/script.js",
     "lint": "run-s lint.html lint.css lint.js",
