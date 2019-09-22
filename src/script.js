@@ -27,7 +27,9 @@
   }
 
   function setupTooltips() {
-    $('[data-toggle="tooltip"]').tooltip();
+    if (!isMobileDevice()) {
+      $('[data-toggle="tooltip"]').tooltip();
+    }
   }
 
   function setupModals() {
@@ -45,5 +47,9 @@
 
   function showPage() {
     $('body').removeClass('loading');
+  }
+
+  function isMobileDevice() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   }
 })(window.jQuery, window.BootstrapDialog);
