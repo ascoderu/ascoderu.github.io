@@ -33,15 +33,24 @@
   }
 
   function setupModals() {
-    $('div[rel="modal"]').click(function() {
+    $('div[rel="modal"]').on('click keydown', function(event) {
+      if (event.which !== 1 && event.which !== 13) {
+        return;
+      }
+
       var $clicked = $(this);
       var clickedModalId = $clicked.data('reference');
       var contentModalHtml = $('#' + clickedModalId).html();
 
-      BootstrapDialog.show({
+      var dialog = BootstrapDialog.show({
+        onhidden: function() {
+          $clicked.focus();
+        },
         title: $clicked.data('title'),
         message: $('<div/>').append(contentModalHtml)
       });
+
+      dialog.$modal.focus();
     });
   }
 
