@@ -1,34 +1,49 @@
 (function($, BootstrapDialog) {
+  $(document).ready(function() {
+    maximizeSections();
+    activateNavLinkOnScroll();
+    activateNavLinkOnClick();
+    setupTooltips();
+    setupModals();
+    showPage();
+  });
 
-  function assignModalTitleAndContent($clicked) {
-    var clickedModalId = $clicked.data('reference');
-    var contentModalHtml = $('#' + clickedModalId).html();
+  function maximizeSections() {
+    $('section.fullpage').css('height', $(window).height() + 'px');
+  }
 
-    BootstrapDialog.show({
-      title: $clicked.data('title'),
-      message: $('<div/>').append(contentModalHtml)
+  function activateNavLinkOnScroll() {
+    $('body').scrollspy({ target: '.navbar-collapse', offset: 100 });
+  }
+
+  function activateNavLinkOnClick() {
+    $('.navbar-nav li a').click(function() {
+      var $clicked = $(this);
+      $('.navbar-collapse').collapse('hide');
+      $('.navbar-nav').find('.active').removeClass('active');
+      $clicked.parent().addClass('active');
+      $('body, html').animate({ scrollTop: $($clicked.attr('href')).offset().top - 70 }, 400);
     });
   }
 
-  $(document).ready(function() {
-    $('section.fullpage').css('height', $(window).height() + 'px');
-
-    $('body').scrollspy({ target: '.navbar-collapse', offset: 100 });
-
-    $('.navbar-nav li a').click(function() {
-      $('.navbar-collapse').collapse('hide');
-      $('.navbar-nav').find('.active').removeClass('active');
-      $(this).parent().addClass('active');
-      $('body, html').animate({ scrollTop: $($(this).attr('href')).offset().top - 70 }, 400);
-    });
-
+  function setupTooltips() {
     $('[data-toggle="tooltip"]').tooltip();
+  }
 
+  function setupModals() {
     $('div[rel="modal"]').click(function() {
-      assignModalTitleAndContent($(this));
+      var $clicked = $(this);
+      var clickedModalId = $clicked.data('reference');
+      var contentModalHtml = $('#' + clickedModalId).html();
+
+      BootstrapDialog.show({
+        title: $clicked.data('title'),
+        message: $('<div/>').append(contentModalHtml)
+      });
     });
+  }
 
+  function showPage() {
     $('body').removeClass('loading');
-  });
-
+  }
 })(window.jQuery, window.BootstrapDialog);
