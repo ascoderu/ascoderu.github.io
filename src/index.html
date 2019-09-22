@@ -15,14 +15,11 @@
   <meta property="og:image:height" content="630">
   <meta property="fb:app_id" content="397128703965407">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div id="website-content" class="hidden">
 
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -38,19 +35,19 @@
 
       <div class="collapse navbar-collapse medium">
         <ul class="nav navbar-nav navbar-right" id="navbar-menu">
-          <li data-menuanchor="home-page" class="active"><a href="#home-page">Home</a></li>
-          <li data-menuanchor="history"><a href="#history">History</a></li>
-          <li data-menuanchor="lokole"><a href="#lokole">Lokole</a></li>
-          <li data-menuanchor="help-us"><a href="#help-us">Help us</a></li>
-          <li data-menuanchor="news"><a href="#news">News</a></li>
-          <li data-menuanchor="contact"><a href="#contact">Contact us</a></li>
+          <li class="active"><a href="#home-page">Home</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#lokole">Lokole</a></li>
+          <li><a href="#help-us">Help us</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id="fullpage">
-    <div class="section" data-anchor="home-page" id="home">
+  <main>
+    <section class="fullpage" id="home-page">
 
       <div class="container-fluid text-white">
         <h1 class="extra-large no-style">LOKOLE: EMAIL FOR ALL</h1>
@@ -64,18 +61,12 @@
           by improving education, health services and economic opportunities
         </p>
       </div>
+    </section>
 
-      <div class="transparent-section-footer">
-        <a href="#history" class="btn btn-lg btn-next" data-toggle="tooltip" title="next page" data-placement="left">
-          <span class="glyphicon glyphicon-menu-down"></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="section" data-anchor="history">
+    <section id="history">
       <div class="container-fluid row-layout" id="history-convert">
 
-          <img data-src="static/nzola.jpg" class="img-thumbnail img-responsive" id="about-img" alt="Photo of Nzola" />
+          <img src="static/nzola.jpg" class="img-thumbnail img-responsive" id="about-img" alt="Photo of Nzola" />
           <div class="medium" id="modals">
 
             <div class="thumbnail" rel="modal" id="info1" data-toggle="tooltip" title="more history" data-reference="modal-1-content" data-title="The foundations that led to Ascoderu">
@@ -128,15 +119,9 @@
           </div>
 
       </div>
+    </section>
 
-      <div class="transparent-section-footer">
-        <a href="#lokole" class="btn btn-lg btn-next" data-toggle="tooltip" title="next page" data-placement="left">
-          <span class="glyphicon glyphicon-menu-down"></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="section" data-anchor="lokole">
+    <section id="lokole">
       <div class="container-fluid">
         <div class="extra-large">LOKOLE</div>
         <div id="lokole-intro"><strong>Lokole</strong> is our custom software-and-hardware device built in early 2017.
@@ -183,7 +168,7 @@
 
             </table>
           </div>
-          <img data-src="static/lokole.jpg" class="img-thumbnail img-responsive" id="lokole-img" alt="Image of a Lokole device" />
+          <img src="static/lokole.jpg" class="img-thumbnail img-responsive" id="lokole-img" alt="Image of a Lokole device" />
           <div class="table-responsive">
             <table class="table table-condensed table-bordered" id="upgrade-cost">
               <caption>Approx upgrades price</caption>
@@ -221,14 +206,9 @@
         </div>
 
       </div>
-      <div class="transparent-section-footer">
-        <a href="#help-us" class="btn btn-lg btn-next" data-toggle="tooltip" title="next page" data-placement="left">
-          <span class="glyphicon glyphicon-menu-down"></span>
-        </a>
-      </div>
-    </div>
+    </section>
 
-    <div class="section" data-anchor="help-us">
+    <section id="help-us">
       <div class="container-fluid">
         <p class="extra-large">Do you want to help us?</p>
         <div class="row-wrap-layout">
@@ -265,15 +245,9 @@
         </a>
 
       </div>
-      <div class="transparent-section-footer">
-        <a href="#news" class="btn btn-lg btn-next" data-toggle="tooltip" title="next page" data-placement="left">
-          <span class="glyphicon glyphicon-menu-down"></span>
-        </a>
+    </section>
 
-      </div>
-    </div>
-
-    <div class="section" data-anchor="news">
+    <section id="news">
       <div class="container-fluid">
         <p class="large">What do people say about us?</p>
         <a class="no-style" href="https://user-images.githubusercontent.com/1086421/65366066-2d954480-dbed-11e9-977d-a4c309edc4cc.png" target="_blank" rel="noopener">
@@ -344,15 +318,9 @@
           </div>
         </a>
       </div>
+    </section>
 
-      <div class="transparent-section-footer">
-        <a href="#contact" class="btn btn-lg btn-next" data-toggle="tooltip" title="next page" data-placement="left">
-          <span class="glyphicon glyphicon-menu-down"></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="section" data-anchor="contact">
+    <section id="contact">
       <div class="container-fluid">
         <p class="large">Any question? Any proposal?</p>
         <p class="medium">
@@ -362,7 +330,7 @@
         <div class="row-wrap-layout">
           <div class="text-left vertical-layout" id="members-team">
             <div class="contact-email-block row-layout">
-              <img data-src="static/profile/nzola.png" class="img-circle img-responsive" id="nzola-profile" alt="Portrait of Nzola Swasisa">
+              <img src="static/profile/nzola.png" class="img-circle img-responsive" id="nzola-profile" alt="Portrait of Nzola Swasisa">
               <div class="member-contact">
                 <div><strong>Nzola Swasisa</strong>, <em>Founder &amp; CEO</em></div>
                 <div>
@@ -374,7 +342,7 @@
             </div>
 
             <div class="contact-email-block row-layout">
-              <img data-src="static/profile/clemens.png" class="img-circle img-responsive" id="clemens-profile" alt="Portrait of Clemens Wolff">
+              <img src="static/profile/clemens.png" class="img-circle img-responsive" id="clemens-profile" alt="Portrait of Clemens Wolff">
               <div class="member-contact">
                 <div><strong>Clemens Wolff</strong>, <em>Technical Advisor</em></div>
                 <div>
@@ -386,7 +354,7 @@
             </div>
 
             <div class="contact-email-block row-layout">
-              <img data-src="static/profile/laura.jpg" class="img-circle img-responsive" id="laura-profile" alt="Portrait of Laura Barluzzi">
+              <img src="static/profile/laura.jpg" class="img-circle img-responsive" id="laura-profile" alt="Portrait of Laura Barluzzi">
               <div class="member-contact">
                 <div><strong>Laura Barluzzi</strong>, <em>Web Developer</em></div>
                 <div>
@@ -399,22 +367,21 @@
           </div>
 
           <div id="image-team">
-            <img data-src="static/team.jpg" class="img-thumbnail img-responsive" alt="Portrait of Ascoderu team" />
+            <img src="static/team.jpg" class="img-thumbnail img-responsive" alt="Portrait of Ascoderu team" />
           </div>
 
         </div>
       </div>
-      <div class="footer-fixed-bottom extra-small">
-        ASCODERU (<em>Action Swasisa Pour la Connexion et le Developement Rural</em>) &mdash; 1155 Bombardier Crescent, Victoria, BC, V9B 0R4 CANADA &mdash; www.ascoderu.ca
-      </div>
-    </div>
+    </section>
 
-  </div>
-  </div>
+  </main>
+
+  <footer class="footer-fixed-bottom extra-small">
+    ASCODERU (<em>Action Swasisa Pour la Connexion et le Developement Rural</em>) &mdash; 1155 Bombardier Crescent, Victoria, BC, V9B 0R4 CANADA &mdash; www.ascoderu.ca
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.9/jquery.fullPage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
   <script src="script.js"></script>
 </body>
