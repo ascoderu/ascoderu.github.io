@@ -28,6 +28,7 @@
       assignModalTitleAndContent($(this));
     });
 
+    $('body').removeClass('loading');
   });
 
 })(window.jQuery, window.BootstrapDialog);
