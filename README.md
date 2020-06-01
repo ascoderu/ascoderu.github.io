@@ -1,6 +1,6 @@
 # ascoderu.github.io
 
-[![Travis CI status](https://api.travis-ci.org/ascoderu/ascoderu.github.io.svg?branch=development)](https://travis-ci.org/ascoderu/ascoderu.github.io)
+[![CI](https://github.com/ascoderu/ascoderu.github.io/workflows/CI/badge.svg)](https://github.com/ascoderu/ascoderu.github.io/actions)
 
 Public information site for Ascoderu, hosted via Github-Pages and Cloudflare at [ascoderu.ca](https://ascoderu.ca).
 
