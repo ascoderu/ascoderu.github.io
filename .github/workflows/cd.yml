@@ -6,7 +6,7 @@ on:
       - created
 
 jobs:
-  linters:
+  gh-pages:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,6 @@ jobs:
           node-version: '12'
       - run: npm install
       - run: npm run deploy
-        with:
-          env:
-            TRAVIS_REPO_SLUG: ascoderu/ascoderu.github.io
-            GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+        env:
+          TRAVIS_REPO_SLUG: ascoderu/ascoderu.github.io
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
