@@ -19,3 +19,4 @@ jobs:
         env:
           TRAVIS_REPO_SLUG: ascoderu/ascoderu.github.io
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CF_API_TOKEN }}

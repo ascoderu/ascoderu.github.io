@@ -8,6 +8,7 @@
   "scripts": {
     "predeploy": "gh-pages-clean",
     "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}\"",
+    "postdeploy": "cfcli --domain ascoderu.ca --token \"${CLOUDFLARE_TOKEN}\" purge",
     "lint.css": "csslint src",
     "lint.html": "htmllint src/index.html",
     "lint.js": "eslint --max-warnings=0 src/script.js",
@@ -15,6 +16,7 @@
     "start": "reload --browser --dir src"
   },
   "devDependencies": {
+    "cloudflare-cli": "^4.0.0",
     "csslint": "^1.0.5",
     "eslint": "^6.3.0",
     "gh-pages": "^2.1.1",
