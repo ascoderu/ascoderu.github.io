@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "predeploy": "gh-pages-clean",
-    "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}\"",
+    "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/ascoderu/ascoderu.github.io\"",
     "postdeploy": "cfcli --domain ascoderu.ca --token \"${CLOUDFLARE_TOKEN}\" purge",
     "lint.css": "csslint src",
     "lint.html": "htmllint src/index.html",
