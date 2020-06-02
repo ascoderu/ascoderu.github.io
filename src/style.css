@@ -139,6 +139,15 @@ a.no-style {
   text-decoration: none;
 }
 
+a.inline{
+  color: #191919;
+  text-decoration: none;
+}
+
+a.inline:hover {
+  text-decoration: underline;
+}
+
 h1.no-style {
   font-weight: 700;
   line-height: 1;
@@ -204,7 +213,7 @@ h1.no-style {
 
 #lokole-img {
   margin: 15px;
-  max-width: 300px;
+  max-width: 420px;
 }
 
 /* #help-us */
