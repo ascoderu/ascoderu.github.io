@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "predeploy": "gh-pages-clean",
-    "deploy": "gh-pages --silent --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/ascoderu/ascoderu.github.io\"",
+    "deploy": "gh-pages --no-history --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/ascoderu/ascoderu.github.io\" --user \"Deployment Bot (from Github Actions) <deploy@ascoderu.ca>\"",
     "postdeploy": "cfcli --domain ascoderu.ca --token \"${CLOUDFLARE_TOKEN}\" purge",
     "lint.css": "csslint src",
     "lint.html": "htmllint src/index.html",
@@ -19,7 +19,7 @@
     "cloudflare-cli": "^4.0.0",
     "csslint": "^1.0.5",
     "eslint": "^6.3.0",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^3.0.0",
     "htmllint-cli": "^0.0.7",
     "npm-run-all": "^4.1.5",
     "reload": "^3.0.1"
