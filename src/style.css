@@ -272,7 +272,26 @@ h1.no-style {
 
 /*** MOBILE FRIENDLY ***/
 
+@media (max-width: 400px) {
+
+  .thumbnail,
+  #about-img,
+  #lokole-img,
+  #image-team {
+    max-width: 260px;
+  }
+
+}
+
 @media (max-width: 700px) {
+
+  #upgrade-cost {
+    display: none;
+  }
+
+  section {
+    margin-bottom: 3em;
+  }
 
   #history-convert {
     align-content: center;
