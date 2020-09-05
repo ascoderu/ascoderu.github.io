@@ -1,0 +1,15 @@
+.loading {
+  display: block;
+}
+
+div[rel="modal"] .hidden {
+  display: block !important; /* csslint allow: important */
+}
+
+div[rel="modal"] {
+  pointer-events: none;
+}
+
+div[rel="modal"] .read-more {
+  display: none;
+}
