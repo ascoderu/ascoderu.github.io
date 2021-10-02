@@ -15,7 +15,11 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
-      - run: npm run deploy
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./src
+          publish_branch: master
+      - run: npm run postdeploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
           CLOUDFLARE_TOKEN: ${{ secrets.CF_API_TOKEN }}

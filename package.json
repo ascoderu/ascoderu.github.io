@@ -6,8 +6,6 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
-    "predeploy": "gh-pages-clean",
-    "deploy": "gh-pages --no-history --dist src --branch master --repo \"https://${GITHUB_TOKEN}@github.com/ascoderu/ascoderu.github.io\" --user \"Deployment Bot (from Github Actions) <deploy@ascoderu.ca>\"",
     "postdeploy": "cfcli --domain ascoderu.ca --token \"${CLOUDFLARE_TOKEN}\" purge",
     "lint.css": "csslint src",
     "lint.html": "htmllint src/index.html",
