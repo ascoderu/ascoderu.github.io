@@ -15,13 +15,13 @@
     "start": "reload --browser --dir src"
   },
   "devDependencies": {
-    "cloudflare-cli": "^4.0.0",
+    "cloudflare-cli": "^4.2.0",
     "csslint": "^1.0.5",
-    "eslint": "^6.3.0",
-    "gh-pages": "^3.0.0",
+    "eslint": "^8.25.0",
+    "gh-pages": "^4.0.0",
     "htmllint-cli": "^0.0.7",
     "markdownlint-cli": "^0.32.2",
     "npm-run-all": "^4.1.5",
-    "reload": "^3.0.1"
+    "reload": "^3.2.0"
   }
 }
